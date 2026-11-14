@@ -6,7 +6,9 @@
 
 ### One local API. Multiple exchange routes.
 
-**A self-hosted connectivity layer for crypto trading bots, designed to unify official exchange APIs and eligible web-session integrations.**
+**Unified Crypto Trading API Gateway — Official API & Web Session integrations for trading bots.**
+
+Self-hosted infrastructure for algorithmic trading developers, with a local REST API, Python sandbox, exchange connection routing and a subscription-based product concept.
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-1d334b?style=flat-square&logo=python&logoColor=white) ![REST API](https://img.shields.io/badge/API-REST-1d334b?style=flat-square) ![Deployment](https://img.shields.io/badge/Deployment-Self--hosted-1d334b?style=flat-square) ![Access](https://img.shields.io/badge/Access-By%20Request-147e71?style=flat-square)
 
