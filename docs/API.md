@@ -11,6 +11,24 @@ WebAPI Bridge is designed to offer one local API contract across supported tradi
 | GET | `/v1/balances?account=paper-main` | Paper balance |
 | GET | `/v1/positions?account=paper-main` | Empty simulated positions |
 
+## Proposed account routing (not implemented yet)
+
+Account aliases will select both the exchange and the approved connection method. For example, `mexc-main` could use Official API while `mexc-session` could use an eligible Web Session connector. **The bot calls the same local API in either case**.
+
+Illustrative account configuration:
+
+```json
+{
+  "account_alias": "mexc-main",
+  "exchange": "mexc",
+  "connection_mode": "official_api"
+}
+```
+
+The proposed values are `official_api` and `web_session`. Neither selects a route in the current simulated-data sandbox. The local Gateway must refuse unsupported or unapproved modes; switching routes after an ambiguous order submission is not automatic.
+
+[24 exchange candidates and mode-selection concept](EXCHANGES.md).
+
 ## Designed execution endpoints (not implemented yet)
 
 | Method | Path | Description |
