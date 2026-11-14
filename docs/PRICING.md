@@ -4,7 +4,7 @@ These are **proposed** prices used to validate customer interest. Billing is not
 
 | | Starter | Pro | Team |
 |---|---:|---:|---:|
-| Monthly price target | **$39** | **$99** | **$249** |
+| Monthly price target | **$19** | **$49** | **$149** |
 | Connector slots | 2 | 5 | 15 |
 | Gateway deployments | 1 | 2 | 5 |
 | Local REST API / Python client | Planned | Planned | Planned |
