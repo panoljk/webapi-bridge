@@ -104,7 +104,7 @@ Mentioned exchanges are **candidates**, not released integrations or official pa
 
 | | **Starter** | **Pro** | **Team** |
 |---|---:|---:|---:|
-| Monthly target | **$39** | **$99** | **$249** |
+| Monthly target | **$19** | **$49** | **$149** |
 | Connector slots (target) | 2 | 5 | 15 |
 | Gateway installations (target) | 1 | 2 | 5 |
 | API & SDK | Planned | Planned | Planned |
