@@ -8,11 +8,11 @@
 
 **A self-hosted connectivity layer for crypto trading bots, designed to unify official exchange APIs and eligible web-session integrations.**
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-1d334b?style=flat-square&logo=python&logoColor=white) ![REST API](https://img.shields.io/badge/API-REST-1d334b?style=flat-square) ![Deployment](https://img.shields.io/badge/Deployment-Self--hosted-1d334b?style=flat-square) ![Early access](https://img.shields.io/badge/Status-Early%20Access-147e71?style=flat-square)
+![Python](https://img.shields.io/badge/Python-3.10%2B-1d334b?style=flat-square&logo=python&logoColor=white) ![REST API](https://img.shields.io/badge/API-REST-1d334b?style=flat-square) ![Deployment](https://img.shields.io/badge/Deployment-Self--hosted-1d334b?style=flat-square) ![Access](https://img.shields.io/badge/Access-By%20Request-147e71?style=flat-square)
 
-### 🚀 WANT ACCESS TO WEBAPI BRIDGE?
+### 🚀 GET WEBAPI BRIDGE ACCESS
 
-**Contact us directly on Telegram to discuss early access, supported exchanges and subscription options.**
+**Request a personal introduction, discuss the exchange routes you need, and choose a subscription tier via Telegram.**
 
 [![Message on Telegram](https://img.shields.io/badge/💬%20MESSAGE%20US%20ON%20TELEGRAM-@trusty__kyc__manager-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/trusty_kyc_manager)
 
@@ -22,11 +22,13 @@
 
 </div>
 
+> **Access status:** Developer sandbox available. Full exchange connections are not yet released; contact us to join the access list.
+
 ---
 
-## Trading infrastructure, not another trading bot
+## One gateway for your trading infrastructure
 
-Keep your existing trading strategy. WebAPI Bridge is designed to expose a **single local endpoint** for connecting trading bots to supported venues while handling venue-specific transport behind interchangeable adapters.
+Connect your own Python, JavaScript, Go or C++ trading bot through a single **local REST API**. The WebAPI Bridge architecture separates your strategy from exchange-specific authentication, request formats and connection routes.
 
 | 🔌 Connectivity | ⚡ Local-first | 🧩 Developer-friendly |
 |---|---|---|
@@ -86,11 +88,11 @@ curl "http://127.0.0.1:8787/v1/balances?account=paper-main"
 
 Live order execution, connector authorization, rate limiting and production WebSocket support are part of the proposed architecture rather than implemented demo functions. See [API documentation](docs/API.md).
 
-## Gateway control panel — design direction
+## Gateway control panel
 
-The envisioned local control panel brings together **Exchange Connections**, **Local API Keys**, **Monitoring & Logs**, **Risk Controls** and **Subscription Status**. The UI is intended to use the same layout on Linux-hosted browser sessions and Windows.
+The control panel specification covers **Exchange Connections**, **Local API Keys**, **Monitoring & Logs**, **Risk Controls**, and **Subscription Status**, with one consistent design for Linux VPS and Windows.
 
-**Each exchange connection will have its own mode selector:**
+**Per-exchange connection selector (interface example):**
 
 ```text
 New connection: MEXC
@@ -101,9 +103,9 @@ New connection: MEXC
 
 The bot still calls one Gateway API. Some connection modes may be unavailable at specific venues. [See the exchange-mode matrix](docs/EXCHANGES.md).
 
-## 24 exchange targets — choose your connection method
+## 24 exchanges in the integration directory
 
-The control-panel concept lets you select **Official API** or **Web Session** for each exchange connection, where that mode is supported and authorized. One unified API remains the same regardless of the selected connection mode.
+The integration directory covers 24 venues and two connection routes: **Official API** and **Web Session**. The intended interface lets users choose a mode for each account when that route is supported and permitted. Your bot continues to use one local API.
 
 | Exchange | Official API | Web Session |
 |:---|:---:|:---:|
@@ -140,18 +142,18 @@ The control-panel concept lets you select **Official API** or **Web Session** fo
 
 > 💬 **Need access for a specific exchange? [Message @trusty_kyc_manager on Telegram](https://t.me/trusty_kyc_manager)** and tell us which route you need.
 
-## Subscription pricing direction
+## Subscription packages
 
 | | **Starter** | **Pro** | **Team** |
 |---|---:|---:|---:|
-| Monthly target | **$19** | **$49** | **$149** |
-| Connector slots (target) | 2 | 5 | 15 |
-| Gateway installations (target) | 1 | 2 | 5 |
-| API & SDK | Planned | Planned | Planned |
+| Price / month* | **$19** | **$49** | **$149** |
+| Connector slots | 2 | 5 | 15 |
+| Gateway installations | 1 | 2 | 5 |
+| Local REST API & SDK | Included in package concept | Included in package concept | Included in package concept |
 | Monitoring | Basic | Advanced | Advanced |
 | Support | Community | Priority | Team |
 
-These are **indicative prices to validate demand**; payment collection is not enabled. [Full details](docs/PRICING.md).
+*Indicative package prices for customer research, not an active checkout. [Package details](docs/PRICING.md).
 
 > **📩 Interested in Starter, Pro or Team? [Message @trusty_kyc_manager on Telegram](https://t.me/trusty_kyc_manager) to request access.**
 
@@ -161,10 +163,10 @@ These are **indicative prices to validate demand**; payment collection is not en
 
 **This is the primary contact for WebAPI Bridge access requests.** Let us know which exchanges you need, whether you prefer Official API or Web Session, and what language your bot uses.
 
-Early-access requests are being collected; production connector access is not yet generally available.
+Contact the maintainer to register interest and confirm availability.
 
 Please never send passwords, exchange API keys, cookies or web-session tokens in Telegram or GitHub issues.
 
 ---
 
-<sub>**Status:** this repository currently contains working simulated-data API examples and project documentation, not live-trading connectors. WebAPI Bridge is independent from the exchanges mentioned above. Use of future connectors will be subject to the venues' rules and applicable laws.</sub>
+<sub>**Availability:** A working simulated-data API sandbox is available in this repository; production trading connectors are not released here. All exchange names refer to integration candidates, not partnerships. Future access depends on exchange rules and applicable law.</sub>
