@@ -10,7 +10,15 @@
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-1d334b?style=flat-square&logo=python&logoColor=white) ![REST API](https://img.shields.io/badge/API-REST-1d334b?style=flat-square) ![Deployment](https://img.shields.io/badge/Deployment-Self--hosted-1d334b?style=flat-square) ![Early access](https://img.shields.io/badge/Status-Early%20Access-147e71?style=flat-square)
 
-**[Request early access](../../issues/new?template=early-access.yml)** · **[API reference](docs/API.md)** · **[Architecture](docs/ARCHITECTURE.md)** · **[Pricing](docs/PRICING.md)**
+### 🚀 WANT ACCESS TO WEBAPI BRIDGE?
+
+**Contact us directly on Telegram to discuss early access, supported exchanges and subscription options.**
+
+[![Message on Telegram](https://img.shields.io/badge/💬%20MESSAGE%20US%20ON%20TELEGRAM-@trusty__kyc__manager-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/trusty_kyc_manager)
+
+**[📩 Open Telegram — @trusty_kyc_manager](https://t.me/trusty_kyc_manager)**
+
+[API reference](docs/API.md) · [Architecture](docs/ARCHITECTURE.md) · [Pricing](docs/PRICING.md)
 
 </div>
 
@@ -105,11 +113,17 @@ Mentioned exchanges are **candidates**, not released integrations or official pa
 
 These are **indicative prices to validate demand**; payment collection is not enabled. [Full details](docs/PRICING.md).
 
-## Request access
+> **📩 Interested in Starter, Pro or Team? [Message @trusty_kyc_manager on Telegram](https://t.me/trusty_kyc_manager) to request access.**
 
-We are collecting developer feedback to prioritize production-grade integrations. **[Open an early-access request](../../issues/new?template=early-access.yml)** and tell us which exchanges, bot language and methods you need.
+## 📩 Get access — Telegram
 
-Please never share API secrets, cookies, session tokens or passwords in GitHub issues.
+### **[👉 MESSAGE @trusty_kyc_manager ON TELEGRAM](https://t.me/trusty_kyc_manager)**
+
+**This is the primary contact for WebAPI Bridge access requests.** Let us know which exchanges you need, whether you prefer Official API or Web Session, and what language your bot uses.
+
+Early-access requests are being collected; production connector access is not yet generally available.
+
+Please never send passwords, exchange API keys, cookies or web-session tokens in Telegram or GitHub issues.
 
 ---
 
