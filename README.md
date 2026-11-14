@@ -103,40 +103,38 @@ New connection: MEXC
 
 The bot still calls one Gateway API. Some connection modes may be unavailable at specific venues. [See the exchange-mode matrix](docs/EXCHANGES.md).
 
-## 24 exchanges in the integration directory
+## Exchange connection options
 
-The integration directory covers 24 venues and two connection routes: **Official API** and **Web Session**. The intended interface lets users choose a mode for each account when that route is supported and permitted. Your bot continues to use one local API.
+The WebAPI Bridge interface is designed around two ways to configure an exchange account: **Official API** and **Web Session**. Both routes would expose the same local API to a connected trading bot.
 
 | Exchange | Official API | Web Session |
 |:---|:---:|:---:|
-| Binance | 🟦 API route candidate | 🔍 Under review |
-| Bybit | 🟦 API route candidate | 🔍 Under review |
-| OKX | 🟦 API route candidate | 🔍 Under review |
-| Bitget | 🟦 API route candidate | 🔍 Under review |
-| Gate.io | 🟦 API route candidate | 🔍 Under review |
-| KuCoin | 🟦 API route candidate | 🔍 Under review |
-| MEXC | 🟦 API route candidate | 🔍 Under review |
-| BingX | 🟦 API route candidate | 🔍 Under review |
-| Phemex | 🟦 API route candidate | 🔍 Under review |
-| WEEX | 🟦 API route candidate | 🔍 Under review |
-| Bitunix | 🟦 API route candidate | 🔍 Under review |
-| Toobit | 🟦 API route candidate | 🔍 Under review |
-| BloFin | 🟦 API route candidate | 🔍 Under review |
-| CoinEx | 🟦 API route candidate | 🔍 Under review |
-| XT.COM | 🟦 API route candidate | 🔍 Under review |
-| WhiteBIT | 🟦 API route candidate | 🔍 Under review |
-| CoinW | 🟦 API route candidate | 🔍 Under review |
-| OrangeX | 🟦 API route candidate | 🔍 Under review |
-| Tapbit | 🟨 Eligibility review | 🔍 Under review |
-| Zoomex | 🟦 API route candidate | 🔍 Under review |
-| Pionex | 🟨 Access conditions review | 🔍 Under review |
-| BTCC | 🟨 Current API status review | 🔍 Under review |
-| KCEX | — No publicly offered trading API | 🔍 Under review |
-| AlphaX | 🟨 Availability review | 🔍 Under review |
+| Binance | 🔑 API Key | 🌐 Web Session |
+| Bybit | 🔑 API Key | 🌐 Web Session |
+| OKX | 🔑 API Key | 🌐 Web Session |
+| Bitget | 🔑 API Key | 🌐 Web Session |
+| Gate.io | 🔑 API Key | 🌐 Web Session |
+| KuCoin | 🔑 API Key | 🌐 Web Session |
+| MEXC | 🔑 API Key | 🌐 Web Session |
+| BingX | 🔑 API Key | 🌐 Web Session |
+| Phemex | 🔑 API Key | 🌐 Web Session |
+| WEEX | 🔑 API Key | 🌐 Web Session |
+| Bitunix | 🔑 API Key | 🌐 Web Session |
+| Toobit | 🔑 API Key | 🌐 Web Session |
+| BloFin | 🔑 API Key | 🌐 Web Session |
+| CoinEx | 🔑 API Key | 🌐 Web Session |
+| XT.COM | 🔑 API Key | 🌐 Web Session |
+| WhiteBIT | 🔑 API Key | 🌐 Web Session |
+| CoinW | 🔑 API Key | 🌐 Web Session |
+| OrangeX | 🔑 API Key | 🌐 Web Session |
+| Tapbit | 🔑 API Key | 🌐 Web Session |
+| Zoomex | 🔑 API Key | 🌐 Web Session |
+| Pionex | 🔑 API Key | 🌐 Web Session |
+| BTCC | 🔑 API Key | 🌐 Web Session |
+| KCEX | — | 🌐 Web Session |
+| AlphaX | — | 🌐 Web Session |
 
-**Legend:** 🟦 proposed official integration · 🟨 availability/eligibility to verify · 🔍 web-session feasibility and permission review · — no route represented.
-
-**Important:** This is an **integration roadmap**, not a list of live connectors. A mode appears in the planned selector only when the relevant exchange actually supports it; unavailable options are disabled. Web Session does **not** imply permission to automate the website or eligibility for manual-trading fees or promotions.
+*Interface preview: these are **connection types in the product design**, not an assertion that every adapter is live or that web-session automation is authorized by every exchange. KCEX has no confirmed public trading API; AlphaX's official API availability is not established. Actual routes depend on exchange support and permissions.*
 
 **[Explore connection-mode design and all exchanges →](docs/EXCHANGES.md)**
 
