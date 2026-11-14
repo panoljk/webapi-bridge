@@ -11,4 +11,10 @@ These are **proposed** prices used to validate customer interest. Billing is not
 | Health and logging | Basic | Advanced | Advanced |
 | Support | Community | Priority | Team |
 
-Connectors and commercial availability depend on technical and venue-policy review. To express interest, open the early access issue template or contact the maintainer.
+## 📩 Request access on Telegram
+
+**[👉 Contact @trusty_kyc_manager — https://t.me/trusty_kyc_manager](https://t.me/trusty_kyc_manager)**
+
+Send your preferred plan, exchanges and bot language. This is an early-access inquiry, not an active checkout.
+
+Connectors and commercial availability depend on technical and venue-policy review.
