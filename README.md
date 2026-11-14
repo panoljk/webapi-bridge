@@ -18,7 +18,7 @@
 
 **[📩 Open Telegram — @trusty_kyc_manager](https://t.me/trusty_kyc_manager)**
 
-[API reference](docs/API.md) · [Architecture](docs/ARCHITECTURE.md) · [Pricing](docs/PRICING.md)
+[API reference](docs/API.md) · [Exchanges](docs/EXCHANGES.md) · [Architecture](docs/ARCHITECTURE.md) · [Pricing](docs/PRICING.md)
 
 </div>
 
@@ -90,15 +90,44 @@ Live order execution, connector authorization, rate limiting and production WebS
 
 The envisioned local control panel brings together **Exchange Connections**, **Local API Keys**, **Monitoring & Logs**, **Risk Controls** and **Subscription Status**. The UI is intended to use the same layout on Linux-hosted browser sessions and Windows.
 
-## Connector coverage under evaluation
+## 24 exchange targets — choose your connection method
 
-| Connector category | Example venues | Integration policy |
-|---|---|---|
-| Official API adapters | Bybit, Bitget, MEXC | Published exchange interfaces |
-| Session-based integrations | MEXC, KCEX, AlphaX | Only where permitted and technically appropriate |
-| Additional venues | Community requests | Demand- and permissions-driven |
+The control-panel concept lets you select **Official API** or **Web Session** for each exchange connection, where that mode is supported and authorized. One unified API remains the same regardless of the selected connection mode.
 
-Mentioned exchanges are **candidates**, not released integrations or official partners. No web-session route is guaranteed to retain manual-trading fees, incentives or account privileges.
+| Exchange | Official API | Web Session |
+|:---|:---:|:---:|
+| Binance | 🟦 API route candidate | 🔍 Under review |
+| Bybit | 🟦 API route candidate | 🔍 Under review |
+| OKX | 🟦 API route candidate | 🔍 Under review |
+| Bitget | 🟦 API route candidate | 🔍 Under review |
+| Gate.io | 🟦 API route candidate | 🔍 Under review |
+| KuCoin | 🟦 API route candidate | 🔍 Under review |
+| MEXC | 🟦 API route candidate | 🔍 Under review |
+| BingX | 🟦 API route candidate | 🔍 Under review |
+| Phemex | 🟦 API route candidate | 🔍 Under review |
+| WEEX | 🟦 API route candidate | 🔍 Under review |
+| Bitunix | 🟦 API route candidate | 🔍 Under review |
+| Toobit | 🟦 API route candidate | 🔍 Under review |
+| BloFin | 🟦 API route candidate | 🔍 Under review |
+| CoinEx | 🟦 API route candidate | 🔍 Under review |
+| XT.COM | 🟦 API route candidate | 🔍 Under review |
+| WhiteBIT | 🟦 API route candidate | 🔍 Under review |
+| CoinW | 🟦 API route candidate | 🔍 Under review |
+| OrangeX | 🟦 API route candidate | 🔍 Under review |
+| Tapbit | 🟨 Eligibility review | 🔍 Under review |
+| Zoomex | 🟦 API route candidate | 🔍 Under review |
+| Pionex | 🟨 Access conditions review | 🔍 Under review |
+| BTCC | 🟨 Current API status review | 🔍 Under review |
+| KCEX | — No publicly offered trading API | 🔍 Under review |
+| AlphaX | 🟨 Availability review | 🔍 Under review |
+
+**Legend:** 🟦 proposed official integration · 🟨 availability/eligibility to verify · 🔍 web-session feasibility and permission review · — no route represented.
+
+**Important:** This is an **integration roadmap**, not a list of live connectors. A mode appears in the planned selector only when the relevant exchange actually supports it; unavailable options are disabled. Web Session does **not** imply permission to automate the website or eligibility for manual-trading fees or promotions.
+
+**[Explore connection-mode design and all exchanges →](docs/EXCHANGES.md)**
+
+> 💬 **Need access for a specific exchange? [Message @trusty_kyc_manager on Telegram](https://t.me/trusty_kyc_manager)** and tell us which route you need.
 
 ## Subscription pricing direction
 
