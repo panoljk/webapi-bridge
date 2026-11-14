@@ -1,0 +1,34 @@
+name: Request early access
+description: Help us prioritize the exchange connections developers need
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest! Do not share API keys, cookies, tokens, passwords or personal financial information.
+  - type: input
+    id: exchanges
+    attributes:
+      label: Which exchanges do you need?
+      placeholder: MEXC, KCEX, etc.
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Preferred access mode
+      options: [Official API, Permitted web session, Either, Not sure]
+  - type: dropdown
+    id: language
+    attributes:
+      label: Trading bot language
+      options: [Python, TypeScript / JavaScript, Go, C++, Other]
+  - type: dropdown
+    id: budget
+    attributes:
+      label: Approximate monthly budget
+      options: [Under $39, $39–$99, $100–$249, $250+, Need demo first]
+  - type: textarea
+    id: features
+    attributes:
+      label: Most important operations
+      description: Orders, positions, balances, order books, event streams, etc.
