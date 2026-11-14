@@ -22,6 +22,8 @@ Self-hosted infrastructure for algorithmic trading developers, with a local REST
 
 [API reference](docs/API.md) · [Exchanges](docs/EXCHANGES.md) · [Architecture](docs/ARCHITECTURE.md) · [Pricing](docs/PRICING.md)
 
+**[💡 Vote on next exchange integrations](https://github.com/panoljk/webapi-bridge/issues/1)**
+
 </div>
 
 > **Access status:** Developer sandbox available. Full exchange connections are not yet released; contact us to join the access list.
