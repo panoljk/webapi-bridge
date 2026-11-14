@@ -34,36 +34,38 @@ Connection type
 
 `Official API` is the preferred default where it supports the operation. An unavailable mode must appear **disabled with the reason**, never as a working option.
 
-## Exchange candidate matrix
+## Exchange selection — interface preview
 
-Legend: **API candidate** means a future adapter target, not a built integration. **Review required** means the exact availability, account eligibility or policy permission must be verified. **Not publicly offered** means a standard trading API is not currently established for that venue from the information being used; this is not a permanent claim.
+The table below presents the **connection methods that the product interface is intended to represent**, not a production-support matrix.
 
-| Exchange | Official API route | Web Session route |
+| Exchange | Official API | Web Session |
 |---|---|---|
-| Binance | API candidate | Review required |
-| Bybit | API candidate | Review required |
-| OKX | API candidate | Review required |
-| Bitget | API candidate | Review required |
-| Gate.io | API candidate | Review required |
-| KuCoin | API candidate | Review required |
-| MEXC | API candidate | Review required |
-| BingX | API candidate | Review required |
-| Phemex | API candidate | Review required |
-| WEEX | API candidate | Review required |
-| Bitunix | API candidate | Review required |
-| Toobit | API candidate | Review required |
-| BloFin | API candidate | Review required |
-| CoinEx | API candidate | Review required |
-| XT.COM | API candidate | Review required |
-| WhiteBIT | API candidate | Review required |
-| CoinW | API candidate | Review required |
-| OrangeX | API candidate | Review required |
-| Tapbit | API eligibility review | Review required |
-| Zoomex | API candidate | Review required |
-| Pionex | Access-conditions review | Review required |
-| BTCC | Current API status review | Review required |
-| KCEX | No publicly offered trading API confirmed | Review required |
-| AlphaX | API availability review | Review required |
+| Binance | 🔑 API Key | 🌐 Web Session |
+| Bybit | 🔑 API Key | 🌐 Web Session |
+| OKX | 🔑 API Key | 🌐 Web Session |
+| Bitget | 🔑 API Key | 🌐 Web Session |
+| Gate.io | 🔑 API Key | 🌐 Web Session |
+| KuCoin | 🔑 API Key | 🌐 Web Session |
+| MEXC | 🔑 API Key | 🌐 Web Session |
+| BingX | 🔑 API Key | 🌐 Web Session |
+| Phemex | 🔑 API Key | 🌐 Web Session |
+| WEEX | 🔑 API Key | 🌐 Web Session |
+| Bitunix | 🔑 API Key | 🌐 Web Session |
+| Toobit | 🔑 API Key | 🌐 Web Session |
+| BloFin | 🔑 API Key | 🌐 Web Session |
+| CoinEx | 🔑 API Key | 🌐 Web Session |
+| XT.COM | 🔑 API Key | 🌐 Web Session |
+| WhiteBIT | 🔑 API Key | 🌐 Web Session |
+| CoinW | 🔑 API Key | 🌐 Web Session |
+| OrangeX | 🔑 API Key | 🌐 Web Session |
+| Tapbit | 🔑 API Key | 🌐 Web Session |
+| Zoomex | 🔑 API Key | 🌐 Web Session |
+| Pionex | 🔑 API Key | 🌐 Web Session |
+| BTCC | 🔑 API Key | 🌐 Web Session |
+| KCEX | — | 🌐 Web Session |
+| AlphaX | — | 🌐 Web Session |
+
+This is a conceptual list. **The included repository demo does not implement live exchange connections.** The UI must only enable methods confirmed to be available, lawful and permitted by the applicable exchange. For KCEX a publicly offered trading API is not confirmed, while AlphaX's official API status is unclear.
 
 ### Proposed connection configuration (illustrative, **not implemented**)
 
