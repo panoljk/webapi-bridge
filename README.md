@@ -90,6 +90,17 @@ Live order execution, connector authorization, rate limiting and production WebS
 
 The envisioned local control panel brings together **Exchange Connections**, **Local API Keys**, **Monitoring & Logs**, **Risk Controls** and **Subscription Status**. The UI is intended to use the same layout on Linux-hosted browser sessions and Windows.
 
+**Each exchange connection will have its own mode selector:**
+
+```text
+New connection: MEXC
+  ○ Official API   — exchange-issued API credentials
+  ○ Web Session    — customer-owned session (where eligible)
+  Account alias: [mexc-main]
+```
+
+The bot still calls one Gateway API. Some connection modes may be unavailable at specific venues. [See the exchange-mode matrix](docs/EXCHANGES.md).
+
 ## 24 exchange targets — choose your connection method
 
 The control-panel concept lets you select **Official API** or **Web Session** for each exchange connection, where that mode is supported and authorized. One unified API remains the same regardless of the selected connection mode.
