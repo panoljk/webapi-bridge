@@ -4,7 +4,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        For early access, contact us directly on Telegram: https://t.me/trusty_kyc_manager\n\nThis issue form is an alternative to Telegram. Do not share API keys, cookies, tokens, passwords or personal financial information.
+        For early access, contact us directly on Telegram: https://t.me/trusty_kyc_manager
+
+        This issue form is an alternative to Telegram. Do not share API keys, cookies, tokens, passwords or personal financial information.
   - type: input
     id: exchanges
     attributes:
